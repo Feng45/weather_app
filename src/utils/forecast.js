@@ -14,7 +14,8 @@ const forecast = (longtitude, latitude, callback) => {
                 // feelslike_temperature: body.current.feelslike,
                 // weather_descriptions: body.current.weather_descriptions[0]
                 "The current temperature is " + body.current.temperature + " F. It feels like " + body.current.feelslike 
-                + " F. The weather overall is " + body.current.weather_descriptions[0] + " ."
+                + " F. The weather overall is " + body.current.weather_descriptions[0] + " . The humudity of the day is "
+                + body.current.humidity + "."
             )        
         } 
     })
